@@ -2,22 +2,13 @@
 //Optional File
 //Can be loaded in the html file
 
+const testVar = "hi"
 
-var element = document.createElement('div');
-element.innerHTML = 'Hello, DOM!';
-element.style.backgroundColor = '#f9f9f9';
-document.body.appendChild(element);
-element.style.textAlign = 'center';
+/* Enter the code to remove the node element here */
+document.querySelector("main#main").remove();
 
-var ul = document.createElement('ul');
-
-for (let i = 0; i < 3; i++) {
-  let li = document.createElement('li');
-  li.innerHTML = (i + 1).toString();
-  ul.appendChild(li);
-}
-
-element.appendChild(ul);
-ul.style.textAlign = 'left';
-ul.removeChild(ul.querySelector('li:nth-child(2)'));
-ul.remove();
+/* Create your new element here and assign it to newHeader */
+const newHeader = document.createElement("h1");
+newHeader.id = "victory"
+newHeader.innerHTML = "Flatiron School is the champion!";
+newHeader.className = "victory";
